@@ -7,3 +7,7 @@ This code simulates contacts among Men who have sex with Men in Stockholm Sweden
 ### Core Functions
 
 00_param_gen.R: This script generates random parameter values from a *reasonable* range to investigate our mechanistic models and the joint distribution of our summary statistics
+
+
+01_sweden_sum_discovery.R: Generates our population
+
