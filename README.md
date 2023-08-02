@@ -14,3 +14,9 @@ This code simulates contacts among Men who have sex with Men in Stockholm Sweden
 
 03_reg_sum_data_function.R: This code paralyzes our reference table during construction for speed
 
+04_reg_sum_data_function.R: This script combines all raw files into the reference table
+
+05_param_matrix_function.R: This function recreates the parameter matrix from our simulations where the parameters are in the file name
+
+
+
