@@ -1,6 +1,6 @@
 # longitudinal-inference
 
-This code simulates contacts among Men who have sex with Men in Stockholm Sweden and demonstrates improved infereces on the mechanism when data are collected in two waves. The improvement is dependent on the timing of data collection and available relationship data demonstrating a need investigate hypothectical population network mechanisms prior to the study. 
+This code simulates contacts among men who have sex with men in Stockholm Sweden and demonstrates improved infereces on the mechanism when data are collected in two waves. The improvement is dependent on the timing of data collection and available relationship data demonstrating a need investigate hypothectical population network mechanisms prior to the study. 
 
 ## File Overview
 
@@ -25,7 +25,38 @@ This code simulates contacts among Men who have sex with Men in Stockholm Sweden
 
 07_figures.R: This script generates the lag plots for our paper
 
+### Usage
+
+To generate a two network samples of 250 people 15 iterations apart from our discretized network mechanism with mu = 0.01, rho = 0.1, sigma = 0.1, w_0 = .3, w_1 = .2
 
 
+```
+G <- Sweden_MSM(num_nodes = 250,
+                mu = 0.01,
+                rho = 0.1,
+                sigma = 0.1,
+                w_0 = .2,
+                w_1 = .3,
+                iter = 1000,
+                g_union = 1,
+                distribution = "discrete",
+                lag = 15
+)
+```
+
+We note we are not aggregating edges past the target iteration (g_union = 1).
+
+To calcuate a summary statistics using a generated network 
+
+```
+summary <- summ_stat_calc(G = G,
+                          request = request_i,
+                          steady_casual_files = G[[3]],
+                          lag = 15)
+```
+
+request_i: 
+
+G is the graph, request_i is the requested summary, edge_type_data is 
 
 
