@@ -46,17 +46,14 @@ G <- Sweden_MSM(num_nodes = 250,
 
 We note we are not aggregating edges past the target iteration (g_union = 1).
 
-To calcuate a summary statistics using a generated network 
+To calcuate the  summary statistic "propotion os steady relationship maintained between lag points" using a generated network 
 
 ```
 summary <- summ_stat_calc(G = G,
-                          request = request_i,
+                          request = "steady_m",
                           steady_casual_files = G[[3]],
                           lag = 15)
 ```
 
-request_i: 
-
-G is the graph, request_i is the requested summary, edge_type_data is 
 
 
