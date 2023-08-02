@@ -27,7 +27,7 @@ This code simulates contacts among men who have sex with men in Stockholm Sweden
 
 ### Usage
 
-To generate a two network samples of 250 people 15 iterations apart from our discretized network mechanism with mu = 0.01, rho = 0.1, sigma = 0.1, w_0 = .3, w_1 = .2
+To generate one sample of two networks of 250 people 15 iterations apart from our discretized network mechanism with mu = 0.01, rho = 0.1, sigma = 0.1, w_0 = .3, w_1 = .2
 
 
 ```
