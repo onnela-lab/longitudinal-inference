@@ -4,19 +4,28 @@ This code simulates contacts among Men who have sex with Men in Stockholm Sweden
 
 ## File Overview
 
-### Core Functions
+### Data Generation
 
-00_param_gen.R: This script generates random parameter values from a *reasonable* range to investigate our mechanistic models and the joint distribution of our summary statistics
+00_param_gen.R: This script generates random parameter values from a *reasonable* range to investigate our mechanistic models and the joint distribution of our summary statistics.
 
-01_sweden_sum_discovery.R: Generates data for our mapping function
+01_sweden_sum_discovery.R: Generates data for our mapping function.
 
-02_sweden_sum_discovery.R: Generates our population
+02_sweden_sum_discovery.R: Generates our population.
 
-03_reg_sum_data_function.R: This code paralyzes our reference table during construction for speed
+### Data Aggregation/Paralyzation
 
-04_reg_sum_data_function.R: This script combines all raw files into the reference table
+03_reg_sum_data_function.R: This code paralyzes our reference table during construction for speed.
 
-05_param_matrix_function.R: This function recreates the parameter matrix from our simulations where the parameters are in the file name
+04_reg_sum_data_function.R: This script combines all raw files into the reference table.
+
+05_param_matrix_function.R: This function recreates the parameter matrix from our simulations where the parameters are in the file name.
+
+### Figures
+06_summ_discovery_plots.R: This script calculates our summary statistic plots.
+
+07_figures.R: This script generates the lag plots for our paper
+
+
 
 
 
