@@ -14,7 +14,7 @@ This code simulates contacts among Men who have sex with Men in Stockholm Sweden
 
 ### Data Aggregation/Paralyzation
 
-03_reg_sum_data_function.R: This code paralyzes our reference table during construction for speed.
+03_reg_sum_data_function.R: This code paralyzes our reference table for Approximate Bayesian Computation during construction for speed.
 
 04_reg_sum_data_function.R: This script combines all raw files into the reference table.
 
